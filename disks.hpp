@@ -39,32 +39,32 @@ public:
     }
   }
 
-  bool operator== (const disk_state& rhs) const {
+  bool operator== (const disk_state& rhs) const {//comparing begining to end
     return std::equal(_colors.begin(), _colors.end(), rhs._colors.begin());
   }
 
-  size_t total_count() const {
+  size_t total_count() const {//returns size of _colors 
     return _colors.size();
   }
 
-  size_t light_count() const {
+  size_t light_count() const {//returns all the dark disk colors
     return total_count() / 2;
   }
 
-  size_t dark_count() const {
+  size_t dark_count() const {//returns all the dark disk colors
     return light_count();
   }
 
-  bool is_index(size_t i) const {
+  bool is_index(size_t i) const {//takes in an index and returns that index if it is in the total size of _colors
     return (i < total_count());
   }
 
-  disk_color get(size_t index) const {
+  disk_color get(size_t index) const {//takes in an index and returns a disk color
     assert(is_index(index));
     return _colors[index];
   }
 
-  void swap(size_t left_index) {
+  void swap(size_t left_index) {//swaps the left index with the right index
     assert(is_index(left_index));
     auto right_index = left_index + 1;
     assert(is_index(right_index));
@@ -142,20 +142,58 @@ public:
   }
 };
 
+
+
 // Algorithm that sorts disks using the alternate algorithm.
 sorted_disks sort_alternate(const disk_state& before) {
-	int numOfSwap = 0;
-  for(int i = 0; i < _after.is_index()){                                                       //record # of step swap
-  //first make 2 poiters point to the first index and the second 
-      
-  //then if first pointer is black swap, else keep on going
-  //if swap, make second pointer point to the next index
-  //if first pointer is black and second is white swap
   
-     }
+	int numOfSwap = 0;
+  disk_state af = before;
+  int backwards = 0;
+  int swaps_back = 1; 
+  bool back = false;
+  for(size_t i = 0; i < before.total_count();i++){              //record # of step swap
+      if(before.is_index(i) == DISK_DARK && before.is_index(i + 1) == DISK_LIGHT){
+       af.swap(i);//
+       numOfSwap++;//
+      }
+      //back = true;
+      if(before.is_index(i) == before.total_count() - 1){
+        for(size_t j = 0; j < before.total_count();j++){ 
+          if(before.is_index(j) == DISK_DARK && before.is_index(j + 1) == DISK_LIGHT){
+            af.swap(j);//
+            numOfSwap++;//
+          }
+        }
+      }
+  }
+    
+      // i = 0 and i + 1 = 1
+      // i = 1 and i + 1 = 2
+      // i = 2 and i + 1 = 3
+      // i = 3 and i + 1 = 4
+      // i = 3 and i + 1 = 5
+     
+      //Step 1: L D L D L D
+      //Step 2: L L D D L D
+      //Step 3: L L D D L D
+      //Step 4: L L D L D D
+      
+      
+      // set a variable = true
+  
   return sorted_disks(disk_state(state), numOfSwap);
 }
 
+// while(back == true){
+    //      if(before.is_index(i-1) == DISK_LIGHT && before.is_index(i) == DISK_LIGHT){
+    //       back = false;
+    //       swaps_back = 0;
+    //      } else{
+    //       af.swap(i-swaps_back);
+    //       swaps_back++;
+    //      }
+    //    }
 
 // Algorithm that sorts disks using the lawnmower algorithm.
 sorted_disks sort_lawnmower(const disk_state& before) {
