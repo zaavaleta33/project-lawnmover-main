@@ -197,7 +197,8 @@ sorted_disks sort_alternate(const disk_state& before) {
 
 // Algorithm that sorts disks using the lawnmower algorithm.
 sorted_disks sort_lawnmower(const disk_state& before) {
-  	
+  //the only move we can make is when one disk is next to another one	
+  //second algorightm for this seems to be easir
 	//}
   return sorted_disks(disk_state(state), numOfSwap);
 }
