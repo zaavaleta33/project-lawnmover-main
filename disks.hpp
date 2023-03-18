@@ -200,5 +200,11 @@ sorted_disks sort_lawnmower(const disk_state& before) {
   //the only move we can make is when one disk is next to another one	
   //second algorightm for this seems to be easir
 	//}
+  //!it does not iterate thorugh each and every index but iterates over each pair
+  //Todo1:create a forloop that goes through every other pair
+  //Todo2:Create another loop that goes through every disk
+  //Todo3:Does the same thing as Todo1
+  //todo4:does the same thing as Todo2 
+  //!Steps 1 and 2 are reapeated every time
   return sorted_disks(disk_state(state), numOfSwap);
 }
