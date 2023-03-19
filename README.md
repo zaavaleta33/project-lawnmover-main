@@ -1,4 +1,12 @@
-# Readme for Alternating and Lawnmower Algorithms
+#Names
+Alejandro Ramos
+
+
+#Emails
+alejandroramosh27@csu.fullerton.edu
+
+
+#  Alternating and Lawnmower Algorithms
 The Alternating and Lawnmower algorithms, two widely used algorithms in computer science, are described in this readme.
 
 # Alternating Algorithm
