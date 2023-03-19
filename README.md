@@ -4,6 +4,7 @@ Alexander Zavaleta
 
 # Emails
 alejandroramosh27@csu.fullerton.edu
+A_zavaleta@csu.fullerton.edu
 
 
 #  Alternating and Lawnmower Algorithms
