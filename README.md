@@ -4,7 +4,7 @@ The Alternating and Lawnmower algorithms, two widely used algorithms in computer
 # Alternating Algorithm
 A sorting technique called the Alternating Algorithm sorts elements two at a time, beginning with the first two, then the second and third, and so on. Up till every component is sorted, the procedure is repeated.
 
-The Alternating Algorithm is not very effective for huge datasets because of its O(n2) time complexity.
+The Alternating Algorithm is not very effective for huge datasets because of its O(n^2) time complexity.
 
 # Lawnmower Algorithm
 A pattern of iteration known as the "Lawnmower Algorithm" is frequently used in computer science for a number of tasks, including grid or array traversal, sorting, and searching. As if mowing a grass, the algorithm moves back and forth across a grid or array to analyze each element in a systematic way.
