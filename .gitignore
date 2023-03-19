@@ -7,5 +7,5 @@ build/
 bin/
 
 # Ignore disks_test.hpp and rubrictest.hpp files
-disks_test.hpp
+disks_test.cpp
 rubrictest.hpp
