@@ -1,0 +1,11 @@
+# Ignore object files and executables
+*.o
+*.out
+
+# Ignore build directories
+build/
+bin/
+
+# Ignore disks_test.hpp and rubrictest.hpp files
+disks_test.hpp
+rubrictest.hpp
