@@ -2,7 +2,7 @@
 The Alternating and Lawnmower algorithms, two widely used algorithms in computer science, are described in this readme.
 
 # Alternating Algorithm
-A sorting technique called the Alternating Algorithm sorts elements two at a time, beginning with the first two, then the second and third, and so on. Up till every component is sorted, the procedure is repeated. The "bubble sort" algorithm is another name for this method.
+A sorting technique called the Alternating Algorithm sorts elements two at a time, beginning with the first two, then the second and third, and so on. Up till every component is sorted, the procedure is repeated.
 
 The Alternating Algorithm is not very effective for huge datasets because of its O(n2) time complexity.
 
