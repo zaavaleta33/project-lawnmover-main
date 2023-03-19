@@ -22,5 +22,8 @@ You can use the Lawnmower Algorithm both horizontally and vertically. The first 
 
 The time complexity of the lawnmower algorithm depends on the particular implementation, but is typically O(n^2) or more. This makes it suitable for efficiently processing large datasets. 
 
+#Google doc
+https://docs.google.com/document/d/18iO11AkuxCTtsmtx3OiMNgnxVR4MzprsO3OaAV5qj6U/edit
+
 # Conclusion
 The alternating algorithm and the lawnmower algorithm are two important algorithms in computer science. Alternating algorithms are primarily used for sorting, while lawnmower algorithms can be used for a variety of tasks such as searching, sorting, and traversing fields or grids. Both algorithms have their own strengths and weaknesses, and which one to use depends on your particular application and dataset. 
